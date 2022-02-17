@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Closure</title>
+  </head>
+  <body>
+    <section class="nav">
+      <nav>
+        <div class="box-1">
+          <img
+            src="https://www.themoviedb.org/assets/2/v4/logos/v2/blue_short-8e7b30f73a4020692ccca9c88bafe5dcb6f8a62a4c6bc55cd9ba82bb2cd95f6c.svg"
+            alt=""
+          />
+        </div>
+        <div class="box-2">
+          <div>Movies</div>
+          <div>TV Shows</div>
+          <div>People</div>
+          <div>More</div>
+        </div>
+        <div class="box-3">
+          <div><i class="fa fa-plus"> </i></div>
+          <div>Login</div>
+          <div>Join TMDB</div>
+          <div><i class="fa fa-search"></i></div>
+        </div>
+      </nav>
+    </section>
+
+    <!-- search section -->
+    <section class="search-page" id="search-page">
+      <div class="slide">
+        <h1>Welcome.</h1>
+        <p>Millions of movies, TV shows and people to discover. Explore now.</p>
+        <form id="form">
+          <input
+            type="search"
+            placeholder="Search for a movie, tv show, person..."
+            id="search"
+          />
+          <button type="button" id="btn" onclick="handleEvents()">
+            Search
+          </button>
+        </form>
+      </div>
+    </section>
+    <!-- search section page -->
+
+    <!-- search result -->
+    <section class="results-section" id="search-result">
+      <div id="movie-name">
+        <button type="button" id="back-icon" onclick="{handleBack()}">
+          <i class="fa fa-arrow-left"></i>Back
+        </button>
+        <h2 id="search-title">Movie Title</h2>
+      </div>
+      <div id="results"></div>
+    </section>
+
+    <!-- details section -->
+    <section class="details-section" id="details-page">
+      <div id="card">
+        <button id="close" onclick="{handleClose()}">
+          <i class="fa fa-times"></i>
+        </button>
+        <div id="card-body">
+          <p id="card-name">Movie Name</p>
+          <img
+            src="https://image.tmdb.org/t/p/w500/yFuKvT4Vm3sKHdFY4eG6I4ldAnn.jpg"
+            alt=""
+            id="card-img"
+          />
+          <p id="title">Card Title</p>
+          <p id="rating"><strong>rating : </strong></p>
+          <p id="language"><strong>Language : </strong></p>
+          <p id="date"><strong> Release Date : </strong></p>
+          <p id="description">
+            description: Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Accusamus, maiores unde voluptatibus nemo iste ad deserunt
+            eius veniam. Animi, debitis obcaecati dolore totam consequuntur id.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- details section end -->
+    <h1 id="heading">Popular Movies</h1>
+    <div id="trend"></div>
+  </body>
+  <script src="script.js"></script>
+</html>

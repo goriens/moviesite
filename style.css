@@ -1,0 +1,249 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav {
+  background-color: rgb(3, 37, 65);
+  width: 100%;
+}
+nav {
+  display: flex;
+  width: 1200px;
+  margin: auto;
+  padding: 20px;
+  color: #fff;
+  font-weight: 600;
+}
+.box-1 {
+  /*border: 2px solid black;*/
+  width: 20%;
+  display: flex;
+}
+.box-2 {
+  /*border: 2px solid black;*/
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  margin-right: 310px;
+}
+.box-3 {
+  /*border: 3px solid black;*/
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+}
+.fa-search {
+  color: #12b6dc;
+}
+.search-page {
+  width: 1300px;
+  margin: auto;
+  background-image: url(https://wallpaperaccess.com/full/329583.jpg);
+}
+.slide {
+  padding: 80px;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.63);
+}
+.slide > h1 {
+  font-size: 50px;
+  color: #fff;
+}
+.slide > p {
+  font-size: 30px;
+  color: #fff;
+  font-weight: 600;
+}
+.slide > img {
+  width: 100%;
+  display: block;
+}
+form {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  margin-top: 30px;
+  background-color: #fff;
+  border-radius: 22px;
+}
+form > input {
+  width: 100%;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 12px;
+  border-radius: 25px;
+}
+form > button {
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #0dc1cb;
+  padding: 0px 30px;
+  border-radius: 22px;
+  width: 120px;
+  color: #fff;
+}
+form > button:hover {
+  color: black;
+}
+textarea:focus,
+input:focus {
+  outline: none;
+}
+img {
+  width: 100%;
+  display: block;
+  border-radius: 5px;
+}
+/* search results */
+#search-result {
+  display: none;
+}
+#details-page {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.548);
+  /*display: flex;*/
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s ease;
+  color: #fff;
+}
+#card {
+  /*border: 2px solid red;*/
+  width: 49rem;
+  height: 31rem;
+  position: relative;
+  background: rgb(3 37 65);
+  border-radius: 10px;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+  border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+#card-body {
+  overflow: auto;
+  width: 40rem;
+  height: 27rem;
+  padding: 0 4.4rem;
+  position: relative;
+  top: 2rem;
+  margin: auto;
+  background-color: rgb(3, 37, 65);
+}
+#card-body >img{
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+#card-name {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 10px;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+#card-img {
+  width: 30rem;
+  height: auto;
+}
+#title,
+#rating,
+#language,
+#description,
+#date {
+  margin: 0.5rem 0;
+}
+#close {
+  position: absolute;
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+  right: 0;
+  background: 0;
+  color: gray;
+}
+#close:active {
+  background-color: gray;
+  color: white;
+}
+
+#results {
+  padding: 50px;
+  width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  text-align: center;
+}
+#results > div, #trend>div {
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  background-color: rgb(3, 37, 65);
+  color: #fff;
+}
+#results > div > p,#trend > div > p {
+  padding: 17px;
+  font-weight: bold;
+  font-size: 1rem;
+}
+/*img {
+  width: 300px;
+}*/
+#back-icon {
+  padding: 10px 20px;
+  background-color: black;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #fff;
+  border: 0;
+  border-radius: 10px;
+  margin: 10px;
+}
+.fa-arrow-left {
+  margin-right: 10px;
+}
+#search-title {
+  color: rgb(3, 37, 65);
+  margin-left: 10px;
+}
+#trend{
+  padding: 50px;
+  width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  text-align: center; 
+}
+#heading{
+  margin: 55px 35px -11px 30px;
+  padding: 5px;
+  border-bottom: 8px solid rgba(3, 37, 65, 0.822);
+  color: rgb(3, 37, 65);
+  width: 25%;
+}
